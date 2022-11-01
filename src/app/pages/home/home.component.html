@@ -1,0 +1,78 @@
+<div class="header">
+  <my-navbar style="min-width: 100vw; padding: 50px 0px;"></my-navbar>
+  
+  <div id="popup">
+    <p (click)="closePopup()" class="closepopup">X</p>
+    <p class="frasepopup">O email <span class="emailpopup">{{email}}</span> foi cadastrado com sucesso!</p>
+  </div>
+
+  <div class="cadastrarCard">
+    <h1>Mude sua vida hoje</h1>
+    <h3>Faça já seu cadastro</h3>
+    <div class="emailDiv">
+      <input class="email" type="text" placeholder="e-mail" [(ngModel)]="email">
+      <button class="btn" (click)="showPopup()">cadastrar</button>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h1 class="title">Por que treinar com a gente?</h1>
+  <div class="card">
+    <img class="foto" src="../../../assets/images/academia2.jpg" alt="foto1">
+    <div class="textCard">
+      <h3>A academia perfeita pra você</h3>
+      <p>Lorem Ipsum is simply dummy text of the 
+        printing and typesetting industry. 
+        Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s. 
+        Lorem Ipsum is simply dummy text of the 
+        printing and typesetting industry. </p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="textCard">
+      <h3>Temos os melhores preços</h3>
+      <p>Lorem Ipsum is simply dummy text of the 
+        printing and typesetting industry. 
+        Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s. 
+        Lorem Ipsum is simply dummy text of the 
+        printing and typesetting industry. </p>
+    </div>
+    <img class="foto" src="../../../assets/images/academia4.jpg" alt="foto1">
+  </div>
+</div>
+
+<div class="avaliacoes">
+  <h1 class="title">Avaliações dos nossos clientes</h1>
+  <div class="cardsContainer">
+    <div class="cardAvaliacoes">
+      <i class="fas fa-user-circle fa-6x" style="color: white;" ></i>
+      <p>Lorem Ipsum is simply dummy
+        text of the printing and 
+        typesetting industry. Lorem
+        Ipsum is simply dummy
+        text of the Lorem.</p>
+    </div>
+    <div class="cardAvaliacoes">
+      <i class="fas fa-user-circle fa-6x" style="color: white;" ></i>
+      <p>Lorem Ipsum is simply dummy
+        text of the printing and 
+        typesetting industry. Lorem
+        Ipsum is simply dummy
+        text of the Lorem.</p>
+    </div>
+    <div class="cardAvaliacoes">
+      <i class="fas fa-user-circle fa-6x" style="color: white;" ></i>
+      <p>Lorem Ipsum is simply dummy
+        text of the printing and 
+        typesetting industry. Lorem
+        Ipsum is simply dummy
+        text of the Lorem.</p>
+    </div>
+  </div>
+  <img class="logoGrande" width="200px" src="../../../assets/images/Pronto.jpg" alt="logoGrande">
+  
+  <my-footer style="min-width: 100vw; bottom: 0; padding-top: 20px;"></my-footer>
+</div>

@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn {
+  background: transparent;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #AD1A11;
+  border-radius: 7px;
+}
+.btn:hover{
+  transition: 0.7s;
+  background-color: var(--second-color);
+}
+
+.title{
+  margin-bottom: 50px;
+}
+
+.card{
+  background-color: rgba(0, 0, 0, 0.833);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 50vw;
+  padding: 20px 100px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 0px;
+  color: white;
+}
+
+h6{
+  margin: 5px;
+  color: var(--third-color);
+}
+
+p{
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+
+input, mat-select, .placeholder{
+  background: #FFFFFF;
+  border: 1px solid #E2E1E5;
+  border-radius: 5px;
+  height: 25px;
+  width: 200px;
+}
+
+@media (max-width: 1000px){
+  h1 {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+
+:root{
+  --main-color: #000000;
+  --second-color: #AD1A11;
+  --third-color: #ffffff;
+
+  /* navbar */
+  --home: #ffffff;
+  --valores: #ffffff;
+  --login: #ffffff;
+  --cadastro: #ffffff;
+
+  /* aluno */
+  --aluno: #ffffff;
+  --treinos: #ffffff;
+  --plano: #ffffff;
+  --dados: #ffffff;
+  --avaliacao: #ffffff;
+  --coluna-tamanho: 33%;
+
+  /* professor */
+  --professor: #ffffff;
+  --criartreino: #ffffff;
+  --dadosprof: #ffffff;
+  --cadastrarprof: #ffffff;
+}

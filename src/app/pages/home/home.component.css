@@ -1,0 +1,140 @@
+.header {
+  background-image: url(../../../assets/images/academia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+.section, .avaliacoes {
+  background-color: black;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header*/
+
+.cadastrarCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.emailDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.email {
+  background: transparent;
+  color: white;
+  border: 1px solid #AD1A11;
+  width: 200px;
+  height: 30px;
+  border-radius: 7px;
+}
+
+.email:focus {
+  border: 1px solid #AD1A11;
+  outline: none;
+}
+
+.foto{
+  width: 350px;
+}
+
+/* section */
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  width: 60vw;
+  border: 3px solid #A71610;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.textCard{
+  margin: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* avaliações  */
+
+.cardsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardAvaliacoes{
+  margin: 20px;
+  padding: 20px;
+  width: 25vw;
+  border: 3px solid #A71610;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoGrande{
+  margin: 50px;
+}
+
+
+
+/* popup */
+
+#popup{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 25vh;
+  background-color: rgba(255, 255, 255, 0.974);
+  border-radius: 20px;
+}
+
+.frasepopup{
+  color: black;
+}
+
+.closepopup{
+  cursor: pointer;
+  position: inherit;
+  color: black;
+  right: 30px;
+  top: 10px;
+}
+
+.emailpopup{
+  color: var(--second-color);
+}
+
+@media (max-width: 1000px) {
+  .card{
+    flex-direction: column;
+  }
+
+  .foto{
+    width: 90%;
+  }
+}

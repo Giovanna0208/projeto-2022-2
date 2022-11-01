@@ -1,0 +1,16 @@
+<div class="sidebar">
+  <i class="fas fa-user-circle fa-6x"></i>
+  <p>{{nome}}</p>
+
+
+  <div class="navbar">
+    <p id="aluno" class="navitem" (click)="navClick($event)">Dados do usuário</p>
+    <p id="plano" class="navitem" (click)="navClick($event)">Escolher Plano</p>
+    <p id="treinos" class="navitem" (click)="navClick($event)">Ver Treinos</p>
+    <p id="dados" class="navitem" (click)="navClick($event)">Alterar dados do usuário</p>
+    <p id="avaliacao" class="navitem" (click)="navClick($event)">Agendar avaliação física</p>
+    <p style="color: white;" class="navitem" (click)="sairBtn()">Sair</p>
+  </div>
+
+  <img class="imageNav" src="../../../assets/images/Vetor.png" alt="logo">
+</div>

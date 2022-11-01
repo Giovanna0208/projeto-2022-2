@@ -1,0 +1,32 @@
+.header {
+  background-image: url(../../../assets/images/loginAcademia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.btn{
+  width: 200px;
+  margin-top: 10px;
+}
+
+.bodyCadastro{
+  min-width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+@media (max-width: 1000px){
+  .card{
+    padding: 50px;
+  }
+}

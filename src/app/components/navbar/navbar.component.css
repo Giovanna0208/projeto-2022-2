@@ -1,0 +1,50 @@
+.logo {
+  margin-left: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 100px;
+}
+
+.navitems {
+  display: flex;
+  margin-right: 50px;
+}
+
+.item {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 10px;
+}
+
+#home{
+  color: var(--home);
+}
+
+#valores{
+  color: var(--valores);
+}
+
+#login{
+  color: var(--login);
+}
+
+#cadastro{
+  color: var(--cadastro);
+}
+
+@media (max-width: 500px){
+  .logo{
+    margin-left: 25px;
+    width: 50px;
+  }
+}

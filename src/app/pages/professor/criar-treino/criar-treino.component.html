@@ -1,0 +1,52 @@
+<div class="profBody">
+  <my-prof-sidebar></my-prof-sidebar>
+  <div class="all">
+
+    <div class="titulo"><h1>Criar treino</h1></div>
+    
+    <div class="up">
+      <p>Digite o id do aluno</p>
+      <input type="text" placeholder="Id do aluno">
+      <p>Escolha os dias da semana</p>
+      <mat-select [(value)]="diasSemana" multiple>
+        <mat-option *ngFor="let dia of dias" [value]="dia">{{dia}}</mat-option>
+      </mat-select>
+      <div class="chkbox">
+        <p>Superior</p>
+        <input class="picker" type="checkbox" id="superior" [(ngModel)]="superior">
+      </div>
+    </div>
+
+    <div class="center">
+
+      <div class="tabela">
+        <h3>Nome do exercício</h3>
+        <div  *ngFor="let item of exercicios">
+          <div class="placeholder">{{item.nome}}</div>
+        </div>
+        <input id="criarBtn1" type="text" [(ngModel)]="nome">
+      </div>
+
+      <div class="tabela">
+        <h3>Repetições</h3>
+        <div *ngFor="let item of exercicios">
+          <div class="placeholder">{{item.repeticoes}}</div>
+        </div>
+        <input id="criarBtn2" type="text" [(ngModel)]="repeticoes">
+      </div>
+
+      <div class="tabela">
+        <h3>Séries</h3>
+        <div  *ngFor="let item of exercicios">
+          <div class="placeholder">{{item.series}}</div>
+        </div>
+        <input id="criarBtn3" type="text" [(ngModel)]="series">
+      </div>
+
+    </div>
+    <div id="criarBtn4" class="titulo"><button class="btn" (click)="cadastrar()">Criar</button></div>
+
+    <div class="titulo"><button class="btn cadast" (click)="criarTreino()">Cadastrar treino</button></div>
+
+  </div>
+</div>

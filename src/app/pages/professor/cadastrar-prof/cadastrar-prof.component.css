@@ -1,0 +1,26 @@
+.profBody{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.all{
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input{
+  width: 30vw;
+  height: 35px;
+}
+
+.btn{
+  margin-top: 50px;
+  width: 30vw;
+  height: 35px;
+}

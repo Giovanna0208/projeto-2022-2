@@ -1,0 +1,17 @@
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 15px 0px;
+}
+
+.fab{
+  margin: 0 4px;
+  color: var(--third-color);
+  cursor: pointer;
+}
+
+.fab:hover{
+  transition: 0.7s;
+  color: var(--second-color);
+}

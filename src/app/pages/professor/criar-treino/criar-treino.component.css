@@ -1,0 +1,85 @@
+.profBody{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.all{
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.up{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50px;
+}
+
+.picker{
+  width: 100px;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center{
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabela{
+  margin: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40vh;
+}
+
+.btn{
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+mat-select{
+  max-width: 200px;
+}
+
+.cadast{
+  margin-top: 10px;
+  width: 400px;
+}
+
+.placeholder{
+  border: 1px solid rgb(152, 152, 152);
+  background-color: rgb(152, 152, 152);
+}
+
+label{
+  color: white;
+}
+
+.chkbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px){
+  .cadast{
+    width: 250px;
+  }
+}

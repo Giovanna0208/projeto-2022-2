@@ -1,0 +1,53 @@
+<div class="alunoBody">
+  <my-aluno-sidebar></my-aluno-sidebar>
+  <div class="bodyValues">
+    <div class="part borda">
+      <h1>Treino de membros superiores</h1>
+
+      <div class="inside" *ngFor="let item of treinosSuperior">
+        <div class="outquadrado">
+          <h3>{{item.dias}}</h3>
+          <div class="quadrado">
+            <div class="coluna titlecol">
+              <div class="row titlerow ">Exercício</div>
+              <div class="row " *ngFor="let exerc of item.exercicios">{{exerc.nome}}</div>
+            </div>
+            <div class="coluna">
+              <div class="row titlerow ">Repetições</div>
+              <div class="row " *ngFor="let exerc of item.exercicios">{{exerc.repeticoes}}</div>
+            </div>
+            <div class="coluna">
+              <div class="row titlerow"> Séries</div>
+              <div class="row" *ngFor="let exerc of item.exercicios">{{exerc.series}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="part">
+      <h1>Treino de membros inferiores</h1>
+      
+      <div class="inside" *ngFor="let item of treinosInferior" onload="pickHeight()">
+        <div class="outquadrado">
+          <h3>{{item.dias}}</h3>
+          <div class="quadrado">
+            <div class="coluna titlecol">
+              <div class="row titlerow">Exercício</div>
+              <div class="row" *ngFor="let exerc of item.exercicios">{{exerc.nome}}</div>
+            </div>
+            <div class="coluna">
+              <div class="row titlerow">Repetições</div>
+              <div class="row" *ngFor="let exerc of item.exercicios">{{exerc.repeticoes}}</div>
+            </div>
+            <div class="coluna">
+              <div class="row titlerow"> Séries</div>
+              <div class="row" *ngFor="let exerc of item.exercicios">{{exerc.nome}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

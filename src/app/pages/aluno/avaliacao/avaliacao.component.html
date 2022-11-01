@@ -1,0 +1,21 @@
+<div class="alunoBody">
+  <my-aluno-sidebar></my-aluno-sidebar>
+  <div class="all">
+    <h1>Agendar avaliação física</h1>
+
+    <div class="marcada" *ngIf="avaliacao != '' ">
+      <h3 class="textoavaliacao">Avaliaçao marcada para {{avaliacao}}</h3>
+      <button (click)="desmarcar()" class="btn">Desmarcar</button>
+    </div>
+
+    <div class="date">
+      <div class="picker">
+        <input placeholder="MM/DD/YYYY" [(ngModel)]="data" [matDatepicker]="picker">
+        <mat-datepicker-toggle style="color: white;" matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </div>
+      <button class="btn" (click)="marcar()">Marcar</button>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.header {
+  background-image: url(../../../assets/images/loginAcademia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.bodyLogin{
+  min-width: 90vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.card{
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.btn{
+  width: 200px;
+  margin-top: 10px;
+}
+
+.link{
+  cursor: pointer;
+  color: var(--second-color);
+}
+
+.linkDiv{
+  display: flex;
+}
+
+@media (max-width: 1000px){
+  .space{
+    margin-bottom: 50px;
+  }
+
+  .card{
+    display: flex;
+    max-width: 90vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+}

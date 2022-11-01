@@ -1,0 +1,77 @@
+.alunoBody{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.all{
+  min-width: 80vw;
+}
+
+.bodyValues{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.part{
+  min-height: 50vh;
+  margin: 10px 0;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inside{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.borda{
+  border-bottom: 1px solid white;
+}
+
+/* Tabela */
+
+.quadrado{
+  border: 1px solid grey;
+  min-width: 20vw;
+  min-height: 50vh;
+  display: flex;
+}
+
+.outquadrado{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coluna{
+  min-width: 33%;
+  border: 1px solid grey;
+}
+
+.row{
+  height: 14%;
+  border-bottom: 1px solid grey;
+  background-color: rgb(74, 74, 74);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.titlerow{
+  border-top: none;
+  background-color: white;
+  color: black;
+}

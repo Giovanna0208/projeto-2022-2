@@ -1,0 +1,58 @@
+.alunoBody{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.all{
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.marcada{
+  border: 1px solid #A71610;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date{
+  border: 1px solid #A71610;
+  border-radius: 8px;
+  padding: 15px;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn{
+  width:150px;
+}
+
+.textoavaliacao{
+  color: var(--second-color);
+}
+
+@media (max-width: 700px){
+  input{
+    width: 75%;
+  }
+
+  .btn{
+    width: 90%;
+  }
+
+  .date, .marcada{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+}

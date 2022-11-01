@@ -1,0 +1,45 @@
+.sidebar{
+  width: 20vw;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageNav{
+  width: 80px;
+  bottom: 5px;
+  position: absolute;
+}
+
+.navbar{
+  margin-top: 50px;
+}
+
+.fas{
+  margin-top: 50px;
+  color: white;
+}
+
+.navitem {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 10px;
+}
+
+#professor{
+  color: var(--professor);
+}
+
+#criartreino{
+  color: var(--criartreino);
+}
+
+#dadosprof{
+  color: var(--dadosprof);
+}
+
+#cadastrarprof{
+  color: var(--cadastrarprof);
+}

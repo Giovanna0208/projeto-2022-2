@@ -1,0 +1,31 @@
+<div class="header">
+  <my-navbar style="min-width: 100vw; padding: 50px 0px;"></my-navbar>
+
+  <div class="bodyLogin">
+    <h1 class="title">Login</h1>
+    <div class="card">
+      <div class="form space">
+        <h3>Aluno</h3>
+        <p>E-mail</p>
+        <input type="text" placeholder="E-mail" [(ngModel)]="emailAluno">
+        <p>Senha</p>
+        <input type="password" placeholder="Senha" [(ngModel)]="senhaAluno">
+        <div class="linkDiv">
+          <h6>Ainda não tem conta?</h6>
+          <h6 class="link" (click)="Cadastro()">Cadastre-se aqui!</h6>
+        </div>
+        <button class="btn" (click)="loginAluno()">Login</button>
+      </div>
+      <div class="form">
+        <h3>Professor</h3>
+        <p>E-mail</p>
+        <input type="text" placeholder="E-mail" [(ngModel)]="emailProfessor">
+        <p>Senha</p>
+        <input type="password" placeholder="Senha" [(ngModel)]="senhaProfessor">
+        <button class="btn" (click)="loginProfessor()">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <my-footer style="min-width: 100vw; bottom: 0; padding-top: 20px;"></my-footer>
+</div>

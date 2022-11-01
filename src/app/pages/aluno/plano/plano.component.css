@@ -1,0 +1,108 @@
+.alunoBody{
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+
+.all{
+  min-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bodyValues{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  margin-top: 0;
+}
+
+.discount{
+  color: #D0C1BC;
+}
+
+i{
+  color: var(--second-color);
+  margin-right: 10px;
+}
+
+.benef{
+  display: flex;
+  align-items: center;
+  margin-top: 0 !important;
+}
+
+.pItem{
+  margin-top: 0 !important;
+  text-align: start;
+}
+
+h2 {
+  color: var(--second-color);
+}
+
+.planos {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  margin: 10px;
+  background: rgba(14, 13, 14, 0.8);
+  border-radius: 7px;
+  min-width: 15vw;
+  padding: 10px 50px;
+}
+
+.itemPopular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  background: rgba(14, 13, 14, 0.8);
+  border: 3px solid #A71610;
+  border-radius: 7px;
+  min-width: 15vw;
+  padding: 20px 80px;
+}
+
+.beneficios{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  margin-top: 10px;
+  width: 70%;
+}
+
+@media (max-width: 1300px){
+  h1{
+    margin-top: 50px;
+  }
+
+  .planos{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
